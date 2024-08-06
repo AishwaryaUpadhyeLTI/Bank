@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 // import { Customer } from '../bank/types/Customer';
 import { CustomerTS } from '../../types/tstypes/Customerts';
-
+ 
 @Component({
   selector: 'app-customerarray',
-
+ 
   templateUrl: './customerarray.component.html',
   styleUrls: ['./customerarray.component.css']
 })

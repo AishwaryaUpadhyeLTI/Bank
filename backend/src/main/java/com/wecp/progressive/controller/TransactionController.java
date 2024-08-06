@@ -56,6 +56,7 @@ public class TransactionController {
     public ResponseEntity<Integer> addTransaction(@RequestBody Transactions transaction) {
         try {
             int transactionId = transactionService.addTransaction(transaction);
+            //System.Logger(transaction);
             return new ResponseEntity<>(transactionId, HttpStatus.CREATED);
         } catch (SQLException e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

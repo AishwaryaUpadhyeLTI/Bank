@@ -37,7 +37,6 @@ export class BankService {
     return this.http.get<Account[]>(
       `${this.baseUrl}/accounts`
     );
-
   }
 
   performTransaction(transaction: Transaction): Observable<Transaction> {
